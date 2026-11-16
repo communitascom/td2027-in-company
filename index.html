@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T&amp;D 2027 | Campanha In Company</title>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#060653;--blue:#32327f;--bright:#4848b5;--pale:#fafaff;--sky:#dfe3f7}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;background:#0b0b3a;overflow:hidden}
+body{font-family:'Inter Tight',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+#stage{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0}
+.slide{position:absolute;left:0;top:0;width:1920px;height:1080px;padding:128px 128px 160px;display:none;flex-direction:column;gap:40px;font-size:32px;line-height:1.4;overflow:hidden}
+.slide.on{display:flex}
+.dark{background:var(--navy);color:var(--pale)}
+.light{background:var(--pale);color:var(--navy)}
+h1,h2,h3,.ws{font-family:'Work Sans',Arial,sans-serif}
+h1{font-size:128px;font-weight:800;line-height:1.02}
+h2{font-size:72px;font-weight:800;line-height:1.06}
+h3{font-size:40px;font-weight:700;line-height:1.15}
+.small{font-size:26px;line-height:1.4}
+.mut{opacity:.78}
+.foot{position:absolute;left:128px;right:128px;bottom:64px;font-size:24px;opacity:.6}
+.row{display:flex;gap:64px;align-items:flex-start}
+.col{display:flex;flex-direction:column;gap:28px}
+img{display:block;flex:none}
+.shot{border-radius:16px;box-shadow:0 18px 50px rgba(6,6,83,.28);object-fit:cover}
+.dark .shot{box-shadow:0 0 0 1px rgba(250,250,255,.25)}
+.num{font-family:'Work Sans',Arial,sans-serif;font-weight:800;color:var(--bright);line-height:1}
+.line{border-top:1px solid rgba(250,250,255,.18)}
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;vertical-align:top;padding:22px 24px;font-size:28px;line-height:1.35}
+th{font-family:'Work Sans',Arial,sans-serif;font-weight:700;font-size:26px;color:var(--bright);border-bottom:2px solid var(--navy)}
+td{border-bottom:1px solid #d3d6ec}
+td:first-child{font-weight:600;white-space:nowrap}
+.btn{display:inline-block;background:var(--bright);color:#fff;text-decoration:none;border-radius:50px;padding:20px 44px;font-weight:600;font-size:28px;line-height:1.2;font-family:'Inter Tight',Arial,sans-serif}
+.dark .btn{background:var(--pale);color:var(--navy)}
+.btn.ghost{background:transparent;border:2px solid currentColor;color:inherit}
+.dark .btn.ghost{background:transparent;color:var(--pale)}
+.deco{position:absolute}
+.fr{border:0;border-radius:16px;background:#eef0fb;display:block;flex:none}
+#hud{position:fixed;left:0;right:0;bottom:0;height:5px;background:rgba(255,255,255,.08);z-index:9}
+#bar{height:100%;width:0;background:var(--bright);transition:width .25s}
+#help{position:fixed;right:18px;bottom:14px;color:#cfd2f5;font:13px 'Inter Tight',Arial,sans-serif;opacity:.7;z-index:9}
+@media print{
+  @page{size:1920px 1080px;margin:0}
+  html,body{overflow:visible;height:auto;background:#fff}
+  #stage{position:static;transform:none!important;width:1920px;height:auto}
+  .slide{display:flex!important;position:relative;page-break-after:always;break-after:page}
+  #hud,#help{display:none}
+}
+</style></head><body>
+<div id="stage">
+
+<section class="slide dark on" id="s1">
+  <img src="img/logo.png" alt="Fundação Vanzolini" style="width:330px">
+  <img class="deco" src="img/leque.png" alt="" style="width:980px;right:-150px;bottom:-190px">
+  <div class="col" style="margin-top:150px;gap:44px">
+    <h1>T&amp;D 2027:<br>do planejamento<br>à entrega</h1>
+    <p class="ws" style="font-size:44px;font-weight:500">Campanha In Company</p>
+  </div>
+</section>
+
+<section class="slide light" id="s2">
+  <div class="row" style="gap:120px;flex:1">
+    <div class="col" style="width:700px;gap:36px">
+      <h2>Objetivo</h2>
+      <p class="ws" style="font-size:52px;font-weight:700;line-height:1.2">Reativar contatos antigos, aproximar a relação e agendar reuniões.</p>
+      <p style="font-size:32px">Um único CTA em todas as peças: agendar uma conversa sobre as prioridades de T&amp;D 2027.</p>
+    </div>
+    <div class="col" style="flex:1;gap:0">
+      <h2 style="margin-bottom:28px">Briefing</h2>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec">Público: profissionais de RH, com abordagem leve e conteudista.</p>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec">Conteúdo das cinco perguntas em formato visual e fácil de compartilhar.</p>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec">E-mail de abertura e dois contatos complementares.</p>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec">Convite para uma conversa inicial sobre as prioridades de T&amp;D 2027.</p>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec">Link do e-mail direto para a agenda do time In Company.</p>
+      <p style="font-size:32px;padding:20px 0;border-top:1px solid #d3d6ec;border-bottom:1px solid #d3d6ec">Arte com as 5 perguntas, para gerar vontade de clicar.</p>
+    </div>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide dark" id="s3">
+  <h2 style="font-size:60px">5 perguntas antes de investir em treinamento em 2027</h2>
+  <div class="col" style="gap:0;margin-top:6px">
+    <div class="line row" style="gap:44px;padding:13px 0;align-items:center"><span class="num" style="font-size:72px;width:90px">1</span><div><p class="ws" style="font-size:34px;font-weight:500">Que metas e competências de 2027 pedem investimento em treinamento?</p><p class="small mut">Ligue o investimento às metas do negócio, equipe por equipe.</p></div></div>
+    <div class="line row" style="gap:44px;padding:13px 0;align-items:center"><span class="num" style="font-size:72px;width:90px">2</span><div><p class="ws" style="font-size:34px;font-weight:500">O que os treinamentos anteriores já mostraram sobre onde investir de novo, ajustar ou parar?</p><p class="small mut">Use o histórico de cursos e turmas como ponto de partida.</p></div></div>
+    <div class="line row" style="gap:44px;padding:13px 0;align-items:center"><span class="num" style="font-size:72px;width:90px">3</span><div><p class="ws" style="font-size:34px;font-weight:500">Esse desafio da equipe se resolve com treinamento ou pede outra solução?</p><p class="small mut">Só vira investimento em treinamento o que é lacuna de competência.</p></div></div>
+    <div class="line row" style="gap:44px;padding:13px 0;align-items:center"><span class="num" style="font-size:72px;width:90px">4</span><div><p class="ws" style="font-size:34px;font-weight:500">Curso aberto ou turma fechada: qual traz o melhor resultado pelo investimento total?</p><p class="small mut">Compare formato e custo total, incluindo o tempo da equipe fora da operação.</p></div></div>
+    <div class="line row" style="gap:44px;padding:13px 0;align-items:center"><span class="num" style="font-size:72px;width:90px">5</span><div><p class="ws" style="font-size:34px;font-weight:500">Como uma primeira turma ajuda a decidir quanto investir na ampliação?</p><p class="small mut">Comece por uma turma e decida com evidências.</p></div></div>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s4">
+  <div class="row" style="gap:96px;flex:1">
+    <img class="shot" src="img/arte-b.jpg" alt="Arte do WhatsApp" style="width:659px;height:824px">
+    <div class="col" style="flex:1;gap:36px">
+      <h2>WhatsApp</h2>
+      <p class="small mut" style="color:var(--navy)">Mensagem sugerida, junto com a arte</p>
+      <div style="background:var(--navy);color:var(--pale);border-radius:28px;padding:44px 48px;font-size:34px;line-height:1.4">Olá! Separamos 5 perguntas para o RH decidir onde investir em treinamento em 2027. Se fizer sentido, converse com um especialista In Company da Fundação Vanzolini: [LINK CURTO]</div>
+    </div>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide dark" id="s5">
+  <div class="row" style="justify-content:space-between;align-items:center">
+    <h2>PDF de rolagem</h2>
+    <a class="btn" href="pdf/5-perguntas-whatsapp-rolagem.pdf" target="_blank" rel="noopener">Abrir o PDF</a>
+  </div>
+  <div class="row" style="gap:24px;justify-content:space-between">
+    <img class="shot" src="img/rol-1.jpg" alt="Rolagem, parte 1" style="width:392px;height:640px;object-position:top"><img class="shot" src="img/rol-2.jpg" alt="Rolagem, parte 2" style="width:392px;height:640px;object-position:top"><img class="shot" src="img/rol-3.jpg" alt="Rolagem, parte 3" style="width:392px;height:640px;object-position:top"><img class="shot" src="img/rol-4.jpg" alt="Rolagem, parte 4" style="width:392px;height:640px;object-position:top">
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s6">
+  <div class="row" style="justify-content:space-between;align-items:center">
+    <h2>Carrossel</h2>
+    <a class="btn" href="pdf/carrossel-linkedin-5-perguntas.pdf" target="_blank" rel="noopener">Abrir o PDF</a>
+  </div>
+  <div class="row" style="gap:24px;justify-content:space-between">
+    <img class="shot" src="img/cb-1.jpg" alt="Carrossel, capa" style="width:396px;height:495px"><img class="shot" src="img/cb-2.jpg" alt="Carrossel, pergunta 1" style="width:396px;height:495px"><img class="shot" src="img/cb-3.jpg" alt="Carrossel, pergunta 2" style="width:396px;height:495px"><img class="shot" src="img/cb-4.jpg" alt="Carrossel, pergunta 3" style="width:396px;height:495px">
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s7">
+  <div class="row" style="justify-content:space-between;align-items:center">
+    <h2>Carrossel</h2>
+    <a class="btn" href="pdf/carrossel-linkedin-5-perguntas.pdf" target="_blank" rel="noopener">Abrir o PDF</a>
+  </div>
+  <div class="row" style="gap:24px">
+    <img class="shot" src="img/cb-5.jpg" alt="Carrossel, pergunta 4" style="width:396px;height:495px"><img class="shot" src="img/cb-6.jpg" alt="Carrossel, pergunta 5" style="width:396px;height:495px"><img class="shot" src="img/cb-7.jpg" alt="Carrossel, fecho" style="width:396px;height:495px">
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide dark" id="s8">
+  <h2>Régua de e-mails</h2>
+  <table>
+    <tr><th style="width:250px;border-bottom-color:var(--pale)">E-mail</th><th style="width:230px;border-bottom-color:var(--pale)">Para quem</th><th style="width:520px;border-bottom-color:var(--pale)">Assunto</th><th style="border-bottom-color:var(--pale)">Pré-cabeçalho</th></tr>
+    <tr><td style="border-color:#2a2a7a">E1 | Abertura</td><td style="border-color:#2a2a7a">Toda a base</td><td style="border-color:#2a2a7a">5 perguntas antes de investir em treinamento em 2027</td><td style="border-color:#2a2a7a">Um roteiro curto para o RH decidir onde investir, o que treinar e quem treinar.</td></tr>
+    <tr><td style="border-color:#2a2a7a">E2 | Aprofundamento</td><td style="border-color:#2a2a7a">Quem não agendou</td><td style="border-color:#2a2a7a">Curso aberto ou turma fechada: como decidir em 2027</td><td style="border-color:#2a2a7a">Uma checagem e quatro critérios para comparar formatos pelo custo total, não pelo preço do curso.</td></tr>
+    <tr><td style="border-color:#2a2a7a">E3 | Convite</td><td style="border-color:#2a2a7a">Quem não agendou</td><td style="border-color:#2a2a7a">Vamos montar o seu plano de treinamento de 2027?</td><td style="border-color:#2a2a7a">Traga o cenário. Saia com prioridades, públicos e formatos.</td></tr>
+  </table>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s9">
+  <div class="row" style="justify-content:space-between;flex:1;gap:80px">
+    <div class="col" style="width:560px;gap:36px">
+      <h2>E1<br>Abertura</h2>
+      <p style="font-size:30px">5 perguntas antes de investir em treinamento em 2027</p>
+      <div class="col" style="gap:20px;align-items:flex-start">
+        <a class="btn" href="emails/email-1-abertura.html" target="_blank" rel="noopener">Abrir o e-mail</a>
+        <a class="btn ghost" href="emails/artes.html#e1" target="_blank" rel="noopener">Artes separadas</a>
+      </div>
+    </div>
+    <iframe class="fr" src="emails/email-1-abertura.html" title="E1 Abertura" style="width:760px;height:824px"></iframe>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s10">
+  <div class="row" style="justify-content:space-between;flex:1;gap:80px">
+    <div class="col" style="width:560px;gap:36px">
+      <h2>E2<br>Aprofundamento</h2>
+      <p style="font-size:30px">Curso aberto ou turma fechada: como decidir em 2027</p>
+      <div class="col" style="gap:20px;align-items:flex-start">
+        <a class="btn" href="emails/email-2-aprofundamento.html" target="_blank" rel="noopener">Abrir o e-mail</a>
+        <a class="btn ghost" href="emails/artes.html#e2" target="_blank" rel="noopener">Artes separadas</a>
+      </div>
+    </div>
+    <iframe class="fr" src="emails/email-2-aprofundamento.html" title="E2 Aprofundamento" style="width:760px;height:824px"></iframe>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="s11">
+  <div class="row" style="justify-content:space-between;flex:1;gap:80px">
+    <div class="col" style="width:560px;gap:36px">
+      <h2>E3<br>Convite</h2>
+      <p style="font-size:30px">Vamos montar o seu plano de treinamento de 2027?</p>
+      <div class="col" style="gap:20px;align-items:flex-start">
+        <a class="btn" href="emails/email-3-convite.html" target="_blank" rel="noopener">Abrir o e-mail</a>
+        <a class="btn ghost" href="emails/artes.html#e3" target="_blank" rel="noopener">Artes separadas</a>
+      </div>
+    </div>
+    <iframe class="fr" src="emails/email-3-convite.html" title="E3 Convite" style="width:760px;height:824px"></iframe>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide dark" id="s12">
+  <img class="deco" src="img/leque.png" alt="" style="width:900px;right:-170px;bottom:-190px">
+  <h2>Próximas entregas</h2>
+  <div class="col" style="gap:0;width:1180px">
+    <div class="line" style="padding:34px 0"><h3>Vídeo post</h3><p style="font-size:32px;margin-top:10px" class="mut">Vídeo vertical de 25 a 35 segundos para LinkedIn e Instagram. Apresenta as 5 perguntas em sequência, no mesmo visual das demais peças, e fecha com a chamada para agendar uma conversa. Entrega na quinta, 19/11.</p></div>
+    <div class="line" style="padding:34px 0"><h3>Blog post</h3><p style="font-size:32px;margin-top:10px" class="mut">Artigo sobre o momento do RH no planejamento de T&amp;D 2027, estruturado nas 5 perguntas e com ponte para a conversa com o time In Company. Briefing pronto, data de entrega a definir.</p></div>
+  </div>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+</div>
+<div id="hud"><div id="bar"></div></div>
+<div id="help">← → navegar &nbsp;|&nbsp; F tela cheia &nbsp;|&nbsp; P imprimir ou salvar em PDF</div>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('.slide')),stage=document.getElementById('stage'),bar=document.getElementById('bar'),i=0;
+  function fit(){
+    var w=document.documentElement.clientWidth||innerWidth,h=document.documentElement.clientHeight||innerHeight;
+    var s=Math.min(w/1920,h/1080);
+    stage.style.transform='scale('+s+')';
+    stage.style.left=((w-1920*s)/2)+'px';stage.style.top=((h-1080*s)/2)+'px';
+  }
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach(function(el,k){el.classList.toggle('on',k===i)});bar.style.width=((i+1)/slides.length*100)+'%';history.replaceState(null,'','#'+(i+1));}
+  addEventListener('resize',fit);addEventListener('orientationchange',fit);document.addEventListener('fullscreenchange',fit);fit();
+  var h=parseInt(location.hash.slice(1),10);show(isNaN(h)?0:h-1);
+  addEventListener('keydown',function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();show(i+1);}
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();show(i-1);}
+    else if(e.key==='Home'){show(0);} else if(e.key==='End'){show(slides.length-1);}
+    else if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();}
+    else if(e.key==='p'||e.key==='P'){window.print();}
+  });
+  addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a,button,iframe'))return;show(e.clientX>innerWidth/2?i+1:i-1);});
+})();
+</script>
+</body></html>
