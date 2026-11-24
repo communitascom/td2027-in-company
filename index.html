@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>T&amp;D 2027 | Campanha In Company v2</title>
+<title>T&amp;D 2027 | Campanha In Company v3</title>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#060653;--blue:#32327f;--bright:#4848b5;--pale:#fafaff;--sky:#dfe3f7}
@@ -36,6 +36,13 @@ td:first-child{font-weight:600;white-space:nowrap}
 .btn.ghost{background:transparent;border:2px solid currentColor;color:inherit}
 .dark .btn.ghost{background:transparent;color:var(--pale)}
 .deco{position:absolute}
+.lk{display:inline-block;white-space:nowrap;background:var(--bright);color:#fff;text-decoration:none;border-radius:40px;padding:10px 26px;font-weight:600;font-size:24px;line-height:1.2;font-family:'Inter Tight',Arial,sans-serif}
+.lk.g{background:#dfe3f7;color:var(--navy)}
+.cf{display:flex;flex-direction:column;gap:22px}
+.cf .it{display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid #d3d6ec;padding-top:18px}
+.cf .it span{font-size:28px;font-weight:600;line-height:1.2}
+.cf .lks{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.vs{display:inline-block;background:rgba(250,250,255,.16);border-radius:40px;padding:8px 24px;font-size:26px;font-weight:600;align-self:flex-start}
 .fr{border:0;border-radius:16px;background:#eef0fb;display:block;flex:none}
 #hud{position:fixed;left:0;right:0;bottom:0;height:5px;background:rgba(255,255,255,.08);z-index:9}
 #bar{height:100%;width:0;background:var(--bright);transition:width .25s}
@@ -56,7 +63,18 @@ td:first-child{font-weight:600;white-space:nowrap}
   <div class="col" style="margin-top:150px;gap:44px">
     <h1>T&amp;D 2027:<br>do planejamento<br>à entrega</h1>
     <p class="ws" style="font-size:44px;font-weight:500">Campanha In Company | do KV às peças</p>
+    <span class="vs">Versão 3 | 24/11/2026</span>
   </div>
+</section>
+
+<section class="slide light" id="mudou">
+  <h2>O que mudou na versão 3</h2>
+  <div class="col" style="gap:0;width:1480px">
+    <div style="border-top:1px solid #d3d6ec;padding:26px 0"><h3 style="font-size:38px">Sete áreas de cursos In Company</h3><p style="font-size:30px;margin-top:8px" class="mut">Entrou IA+ Inteligência Aplicada, no fim da lista: fecho do carrossel e da rolagem do WhatsApp, E2 e blog.</p></div>
+    <div style="border-top:1px solid #d3d6ec;padding:26px 0"><h3 style="font-size:38px">Blog e card da pergunta 5</h3><p style="font-size:30px;margin-top:8px" class="mut">Pergunta 2 reescrita, pergunta 4 com os dois formatos atendendo demandas pontuais e pergunta 5 com turma piloto. No card: &ldquo;Uma turma piloto valida antes de ampliar.&rdquo;</p></div>
+    <div style="border-top:1px solid #d3d6ec;padding:26px 0"><h3 style="font-size:38px">E-mails sem promessa de resultado</h3><p style="font-size:30px;margin-top:8px" class="mut">A conversa serve para discutir prioridades, públicos e formatos. O E2 ganhou checagem mais cuidadosa e áreas com nomes completos, e o E3 reforça que o planejamento de 2027 se define agora.</p></div>
+    <div style="border-top:1px solid #d3d6ec;padding:26px 0"><h3 style="font-size:38px">Início da campanha</h3><p style="font-size:30px;margin-top:8px" class="mut">Depois da aprovação das peças, em data a confirmar.</p></div>
+  </div><div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
 </section>
 
 <section class="slide light" id="s2">
@@ -225,6 +243,17 @@ td:first-child{font-weight:600;white-space:nowrap}
     <div class="line" style="padding:34px 0"><h3>Datas dos posts</h3><p style="font-size:32px;margin-top:10px" class="mut">A equipe da Vanzolini define as datas de publicação dos posts (carrossel, vídeo e blog) e de cada disparo da régua.</p></div>
     <div class="line" style="padding:34px 0"><h3>Para confirmar</h3><p style="font-size:32px;margin-top:10px" class="mut">Remetente (Fundação Vanzolini), lista validada pela Fernanda Conrado e WhatsApp do time para o botão dos e-mails.</p></div>
   </div><div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
+</section>
+
+<section class="slide light" id="conferir">
+  <h2>Para conferir</h2>
+  <div class="row" style="gap:56px;align-items:flex-start;margin-top:8px">
+    <div class="col" style="flex:1"><h3 style="font-size:36px">E-mails</h3><div class="cf"><div class="it"><span>E1 Abertura</span><div class="lks"><a class="lk" href="emails/email-1-abertura.html" target="_blank" rel="noopener">E-mail</a><a class="lk g" href="pdf/email-1-abertura.pdf" target="_blank" rel="noopener">PDF</a></div></div><div class="it"><span>E2 Aprofundamento</span><div class="lks"><a class="lk" href="emails/email-2-aprofundamento.html" target="_blank" rel="noopener">E-mail</a><a class="lk g" href="pdf/email-2-aprofundamento.pdf" target="_blank" rel="noopener">PDF</a></div></div><div class="it"><span>E3 Convite</span><div class="lks"><a class="lk" href="emails/email-3-convite.html" target="_blank" rel="noopener">E-mail</a><a class="lk g" href="pdf/email-3-convite.pdf" target="_blank" rel="noopener">PDF</a></div></div></div></div>
+    <div class="col" style="flex:1"><h3 style="font-size:36px">Redes e WhatsApp</h3><div class="cf"><div class="it"><span>Carrossel LinkedIn e Instagram</span><div class="lks"><a class="lk" href="pdf/carrossel-linkedin-5-perguntas.pdf" target="_blank" rel="noopener">PDF</a></div></div><div class="it"><span>Rolagem do WhatsApp</span><div class="lks"><a class="lk" href="pdf/5-perguntas-whatsapp-rolagem.pdf" target="_blank" rel="noopener">PDF</a></div></div><div class="it"><span>Artes em tamanho original</span><div class="lks"><a class="lk" href="artes/index.html" target="_blank" rel="noopener">Abrir galeria</a></div></div><div class="it"><span>Vídeo post, 36 s</span><div class="lks"><a class="lk" href="img/video-5-perguntas.mp4" target="_blank" rel="noopener">MP4</a></div></div></div></div>
+    <div class="col" style="flex:1"><h3 style="font-size:36px">Blog e apresentação</h3><div class="cf"><div class="it"><span>Briefing do blog</span><div class="lks"><a class="lk" href="https://drive.google.com/file/d/1AKV4QIPIZHLlfa-nCqXVYrRLFlrGKh-i/view" target="_blank" rel="noopener">Documento</a></div></div><div class="it"><span>Texto do blog, para revisão</span><div class="lks"><a class="lk" href="https://drive.google.com/file/d/17UaYYIZTskOJ6MZTjdi2mQEhr6pOVTgR/view" target="_blank" rel="noopener">Documento</a></div></div><div class="it"><span>Arte e imagem destacada do blog</span><div class="lks"><a class="lk" href="img/arte-blog-5-perguntas.png" target="_blank" rel="noopener">Arte</a><a class="lk g" href="img/imagem-destacada-blog-1200x630.jpg" target="_blank" rel="noopener">Destacada</a></div></div><div class="it"><span>Esta apresentação</span><div class="lks"><a class="lk" href="pdf/apresentacao-td2027-v3.pdf" target="_blank" rel="noopener">PDF</a></div></div></div></div>
+  </div>
+  <p class="small mut" style="margin-top:6px">Os e-mails abrem a versão HTML com as imagens já hospedadas. O blog fica só em documento para aprovação, sem publicação no site.</p>
+  <div class="foot">Fundação Vanzolini | T&amp;D 2027 In Company</div>
 </section>
 
 </div>
